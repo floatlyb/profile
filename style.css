@@ -1,0 +1,215 @@
+@import "default.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+body{
+    background:#ffecaf; /* background:#251b00; */ color:#222;
+    font-family:'Noto Sans KR', '맑은 고딕', sans-serif;
+    font-size:16px;
+}
+a{ color:#222;}
+header{ 
+  position:fixed; width:100%;  display:flex; 
+  justify-content:space-between; align-items:center;
+  top:0; background:transparent; padding:0 10px;
+  box-sizing: border-box; z-index:200;
+  background:#fff; border-bottom:1px solid #ccc;
+}
+header>h1{ 
+  font-size:40px; font-weight:700; 
+}
+header>nav{ position:sticky; top:0px;}
+header>nav>ul{ 
+  display:flex; padding:15px 0 15px 0; justify-content:right;
+}
+header>nav>ul>li{ margin-right:10px; box-sizing:border-box;}
+header>nav>ul>li>a{ padding:6px;}
+/* .circle {
+	width: 100px; height: 100px;
+	background-color: #FFF;
+	position: absolute;
+	top: 60px; left: 60px;
+	mix-blend-mode: difference;	
+	border-radius: 50%;
+	will-change: transform;
+  z-index:9999
+} */
+main{ overflow:hidden;}
+#intro{
+  position:relative; background:#2d2d2d; 
+  width:100vw; height:100vh; margin:0 auto;
+/*   background: repeating-linear-gradient(
+    45deg,
+    #2b2b2b 0%,
+    #2b2b2b 10%,
+    #222222 0%,
+    #222222 50%
+  )
+  0 / 15px 15px; */
+}
+#intro>.jo-wrap{
+  width:100%; height:100vh;
+}
+#intro>.jo-wrap>.jo>span{
+  display:block; width:40px; height:100px; background:#a4a4a4;
+  margin:0 auto; 
+}
+#intro>.jo-wrap>.jo>span:nth-child(2){
+  width:200px; height:100px; background:#cdcdcd;
+  border-radius:80px 80px 20px 20px;
+}
+#intro>.jo-wrap>.jo>span:nth-child(3){
+  width:60px; height:30px; background:#fdf4cd;
+  border-radius:0 0 20px 20px;
+}
+#intro>.jo-wrap>.title{
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+#intro>.jo-wrap>.title>p{
+  font-size:100px;  text-align:center;
+  color:#fff; 
+  /* font-family: Audiowide; */
+  animation: neon5 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff9900,
+      0 0 70px #ff9900, 0 0 80px #ff9900;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff9900,
+      0 0 35px #ff9900, 0 0 40px #ff9900;
+  }
+}
+#profile{background:#FFF5E4;}
+#profile>h2{ 
+  font-size:50px; font-weight:700;
+  padding-left:40px; padding-top:20px;
+  /* transform:translateX(-70px); */
+}
+#profile>h2 .active{
+
+}
+
+#profile>.profile-wrap{
+  width:75%; margin:0 auto; padding:30px 0;
+  display:flex; flex-direction:row; 
+  flex-wrap:wrap; justify-content:center;
+  align-items:center;
+}
+#profile>.profile-wrap>.l-profile{
+  width:35%; 
+  display:flex; flex-direction:column;
+}
+#profile>.profile-wrap>.l-profile>.pf-img{
+  width:500px; height:400px; margin-top:30px;
+}
+#profile>.profile-wrap>.l-profile>.pf-img>img{
+  display:block;
+  width:400px; height:400px;
+}
+#profile>.profile-wrap>.l-profile>.pf-sub{margin-top:20px; }
+#profile>.profile-wrap>.l-profile>.pf-sub>h3{
+  font-size:1.2rem; color:#EC7357; font-weight:700;
+}
+
+#profile>.profile-wrap>.r-profile{width:45%; }
+#profile>.profile-wrap>.r-profile>.pf-box{
+  display:flex; flex-wrap:wrap; 
+  background:#ECF9FF; border-radius:20px;
+  padding:50px; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#profile>.profile-wrap>.r-profile>.pf-box>.pf-contant{width:50%; padding:0 15px; box-sizing:border-box;}
+#profile>.profile-wrap>.r-profile>.pf-box>.pf-contant:last-of-type{
+  width:100%; margin-top:20px; flex-grow:1;
+}
+
+#profile>.profile-wrap>.r-profile>.pf-box>.pf-contant>h3{font-size:20px; font-weight:bold;}
+#profile>.profile-wrap>.r-profile>.pf-box>.pf-contant>p{font-size:15px; margin-top:10px; }
+#profile>.profile-wrap>.r-profile>.pf-box>.pf-contant>p span{font-weight:bold;}
+
+#profile>.profile-wrap>.r-profile>.pf-box>.pf-contant>ul{
+  display:flex; justify-content:space-between;
+}
+#profile>.profile-wrap>.r-profile>.pf-box>.pf-contant>ul img{
+  display:block; width:30px;
+}
+
+#portfolio{background:#FFE6E6;}
+#portfolio>h2{
+  font-size:50px; font-weight:700;
+  padding-left:40px; padding-top:20px;
+}
+#portfolio>.portfolio-wrap{
+  max-width:1200px; margin:0 auto;
+}
+#portfolio>.portfolio-wrap>ul{
+  margin:0 auto;
+  display:flex; flex-wrap:wrap; justify-content:center;
+  gap:20px;
+}
+#portfolio>.portfolio-wrap>ul>li{
+  max-width:400px; width:30%; position:relative;
+  margin-bottom:20px; box-sizing:border-box;
+}
+#portfolio>.portfolio-wrap>ul>li>.port-img{
+  background:#F5EFE6; width:100%; box-sizing:border-box;
+  padding:20px;
+}
+#portfolio>.portfolio-wrap>ul>li>.port-text{
+  background:#fff; box-sizing:border-box;
+}
+#portfolio>.portfolio-wrap>ul>li>.port-text>.port-title{
+  font-weight:700; font-size:26px; padding:15px 0 0 10px;
+}
+#portfolio>.portfolio-wrap>ul>li>.port-text>.port-sub{
+  font-size:18px; padding:10px; color:#adabab;
+}
+#portfolio>.portfolio-wrap>ul>li>.port-text>.port-btn{
+  display:flex; justify-content:center;
+  border-top:1px solid #222;
+}
+#portfolio>.portfolio-wrap>ul>li>.port-text>.port-btn>a{
+  display:block; margin:0 auto; font-size:20px; font-weight:600;
+}
+#portfolio>.portfolio-wrap>ul>li>.port-img>img{
+  display:block; width:100%; height:200px; object-fit:contain;
+  margin:0 auto;
+}
+#portfolio>.portfolio-wrap>ul>li>.pop-wrap{
+  width:330px; height:300px; background:#FF9494; 
+  position: absolute; top:0; left:0; z-index:200;
+  padding:15px ; border-radius:20px; 
+}
+/* #portfolio>.portfolio-wrap>ul>li:hover>.pop-wrap{display:block;} */
+#portfolio>.portfolio-wrap>ul>li>.pop-wrap>h3{
+  font-weight:bold; font-size:24px; 
+}
+
+#portfolio>.portfolio-wrap>ul>li>.pop-wrap>p{padding-top:10px; }
+
+#contact{ width:100%; height:50vh;background:#FFF5E4; margin:0 auto;}
+#contact>.contact-wrap{
+  width:100%; height:50vh; 
+}
+#contact>.contact-wrap>h2{
+  text-align:center;
+  font-size: 50px;
+  font-weight: 700;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+#contact>.contact-wrap>.cont-text{
+  font-size:20px; text-align:center; padding-top:10rem;
+}
+#contact>.contact-wrap>.cont-text>p:last-child{ 
+  font-weight:bold; font-size:25px;
+}
+footer{ 
+  width:100%; background:#2b2677;
+}
+footer>div{ padding:20px; text-align:center; color:#fff;}
