@@ -80,7 +80,7 @@ header>nav>ul>li>a{ padding:6px;}
       0 0 35px #ff9900, 0 0 40px #ff9900;
   }
 }
-#profile{background:#FFF5E4;}
+#profile{background:#FFF5E4; padding-top:59px;} 
 #profile>h2{ 
   font-size:50px; font-weight:700;
   padding-top:20px; 
@@ -144,7 +144,7 @@ header>nav>ul>li>a{ padding:6px;}
   display:block; width:30px;
 }
 
-#portfolio{background:#FFE6E6;}
+#portfolio{background:#FFE6E6; padding-top:59px;}
 #portfolio>h2{
   font-size:50px; font-weight:700;
   padding-top:20px; padding-bottom:40px;
@@ -167,7 +167,6 @@ header>nav>ul>li>a{ padding:6px;}
   background:#F5EFE6; width:100%; box-sizing:border-box;
   padding:20px;
 }
-#portfolio>.portfolio-wrap>ul>li:nth-of-type(4)>.port-img{}
 #portfolio>.portfolio-wrap>ul>li>.port-img>img{
   display:block; width:100%; height:200px; object-fit:contain;
   margin:0 auto;
